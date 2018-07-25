@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.overview {
+  /* background: tomato; */
+}
+
+.requirements {
+  width: 50%;
+  /* background: grey; */
+  flex: 1 auto;
+}
+
+.status {
+  width: 50%;
+  /* background: green; */
+  flex: 1 auto;
+}
+
+.footer {
+  /* background: lightblue; */
+
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  /*.main { flex: 2 0px; }*/
+  .requirements { order: 1; }
+  .status    { order: 2; }
+  .footer { order: 3; }
+  
+}
