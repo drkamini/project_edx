@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-flow: row wrap;
   margin: auto;
@@ -11,33 +11,54 @@
 
 .overview {
   /* background: tomato; */
+} */
+
+
+
+/* .status {
+  width: 50%;
+  /* background: green; */
+  /* flex: 1 auto;
+} */ */
+
+
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 150px auto 150px;
+  grid-gap: 10px;
+
+  grid-template-areas: 
+  "title title"
+  "lead lead"
+  "requirements status"
+  "footer footer";
 }
 
+.header {
+  grid-area: title;
+}
+
+.lead {
+  grid-area: lead;
+
+}
+
+.requirements, .status {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+}
 .requirements {
-  width: 50%;
-  /* background: grey; */
-  flex: 1 auto;
+  grid-area: requirements;
 }
 
 .status {
-  width: 50%;
-  /* background: green; */
-  flex: 1 auto;
+  grid-area: status;
 }
 
 .footer {
-  /* background: lightblue; */
+  grid-area: footer;
 
-}
-
-/* Large screens */
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
-   */
-  /*.main { flex: 2 0px; }*/
-  .requirements { order: 1; }
-  .status    { order: 2; }
-  .footer { order: 3; }
-  
 }
