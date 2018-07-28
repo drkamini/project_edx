@@ -2,7 +2,7 @@
 
 Web Programming with Python and JavaScript
 
-Below are the requirements.
+Below are the requirements, with some comments inline.
 
 ## Requirements
 
