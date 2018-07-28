@@ -2,6 +2,8 @@
 
 Web Programming with Python and JavaScript
 
+Below are the requirements.
+
 ## Requirements
 
 Alright, now it’s time to make your website your own. Design a personal webpage about yourself, one of your interests, or any other topic of your choice. The subject matter, look and feel, and design of the site are entirely up to you, subject to the following requirements:
@@ -20,3 +22,15 @@ Note that not all of the above requirements are covered in Lecture 0, some will 
 See:
 
 https://docs.cs50.net/web/2018/w/projects/0/project0.html
+
+
+## Status and Comments, copied from index.html
+
+* OK - site consists of four pages. See links at top
+* OK - click around.
+* OK - see main.css
+* OK - see main.css
+* OK - the Requiremens and Status divs on this page will stack under 900 pixels. They also stack and unstack on mobile (S8) between portrait and landscape orientation.
+* OK - used Bootstrap 4, bootstrap nav, and grid model
+* OK - So, I was totally annoyed that I had to figure out scss and <a href="https://sass-lang.com/">sass</a> on a first web project, but now that I did I realize it's pretty sweet. Totally worth it.
+* NOT OK - finish conclusion

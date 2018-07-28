@@ -43,12 +43,10 @@
 #mytable {
   width: 80%;
 }
-
-thead {
+#mytable thead {
   border-bottom: 3px solid black;
 }
-
-th, td {
+#mytable th, #mytable td {
   border-bottom: 1px solid grey;
 }
 
