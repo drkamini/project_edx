@@ -3,7 +3,19 @@
   grid-gap: 10px;
 }
 
-@media only screen and (max-width: 899px) {
+
+
+
+  .main {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "title title"
+  "lead lead"
+  "left right"
+  "footer footer";
+}
+
+@media only screen and (max-width: 600px), screen and (device-width: 360px) {
   .main {
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -15,16 +27,7 @@
 }
 }
 
-@media only screen and (min-width: 900px) {
-  .main {
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "title title"
-  "lead lead"
-  "left right"
-  "footer footer";
-}
-}
+
 
 .header {
   grid-area: title;
