@@ -40,17 +40,20 @@ $card-border: 1px solid darkgrey;
 
 }
 
-.requirements, .status {
+%card-shared {
   padding: $card-padding;
   border-radius: $card-border-radius;
   border: $card-border;
+
 }
 
 .requirements {
+  @extend %card-shared;
   grid-area: left;
 }
 
 .status {
+  @extend %card-shared;
   grid-area: right;
 }
 
@@ -59,17 +62,20 @@ $card-border: 1px solid darkgrey;
 
 }
 
-#mytable {
-  width: 80%;
 
-}
-thead {
-  border-bottom: 3px solid black;
-}
 
-th, td {
-  border-bottom: 1px solid grey;
-}
+  #mytable {
+    width: 80%;
+
+  }
+  thead {
+    border-bottom: 3px solid black;
+  }
+
+  th, td {
+    border-bottom: 1px solid grey;
+  }
+
 
 #image_container {
   width: 100%;
